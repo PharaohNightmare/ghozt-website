@@ -7,46 +7,47 @@
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(135deg, #1a1a40, #0f0f0f);
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(135deg, #1b0033, #0a0a1f);
       color: #eee;
-      text-align: center;
+      overflow-x: hidden;
     }
     header {
-      padding: 20px;
-      background: rgba(0,0,0,0.6);
-      backdrop-filter: blur(6px);
       position: sticky;
       top: 0;
+      background: rgba(0,0,0,0.7);
+      backdrop-filter: blur(6px);
+      padding: 15px 0;
+      text-align: center;
+      z-index: 1000;
     }
     nav a {
       color: #00ffe0;
-      margin: 0 15px;
+      margin: 0 20px;
       text-decoration: none;
       font-weight: bold;
       transition: color 0.3s;
     }
     nav a:hover { color: #ff00ff; }
-    .content {
-      padding: 60px 20px;
+    section {
+      padding: 80px 20px;
+      text-align: center;
     }
-    h1 {
-      font-size: 2.5em;
-      margin-bottom: 20px;
-      color: #ff00ff;
-      text-shadow: 0 0 15px #ff00ffaa;
-    }
+    h1, h2 { text-shadow: 0 0 15px rgba(255,0,255,0.5); }
+    h1 { font-size: 2.5em; color: #ff00ff; }
     p {
       font-size: 1.2em;
       max-width: 800px;
       margin: auto;
       line-height: 1.7;
+      color: #ddd;
     }
     footer {
-      margin-top: 50px;
+      background: #0a0a1f;
       padding: 20px;
       font-size: 0.9em;
       color: #aaa;
+      margin-top: 40px;
     }
   </style>
 </head>
@@ -58,19 +59,34 @@
     </nav>
   </header>
 
-  <div class="content">
+  <section>
     <h1>About Ghozt</h1>
     <p>
-      Ghozt is built for the next generation of traders and developers.  
-      By combining <b>cTrader</b> with advanced <b>AI Agents</b> like Cursor,  
-      Ghozt allows seamless automation of trading strategies, AI-driven decision making,  
-      and effortless task management.  
+      Ghozt is built for traders and developers who demand more than traditional tools.  
+      We integrate <b>cTrader</b> with <b>AI Agents</b> (Cursor, ChatGPT, and beyond) to allow:  
     </p>
     <p>
-      The future of trading is <b>autonomous, intelligent, and adaptive</b>.  
-      Ghozt is here to lead that change.
+      • Fully automated strategies powered by AI<br>
+      • Adaptive decision-making in real time<br>
+      • Unified workflow for trading and productivity<br>
     </p>
-  </div>
+  </section>
+
+  <section>
+    <h2>Why "Ghozt"?</h2>
+    <p>
+      Like a quantum ghost 👻, Ghozt moves seamlessly in the background —  
+      invisible yet powerful, guiding trades and automating tasks with precision.  
+    </p>
+  </section>
+
+  <section>
+    <h2>Launching Soon</h2>
+    <p>
+      Stay tuned for the official launch of Ghozt.  
+      The future of <b>AI-driven trading</b> is closer than ever.  
+    </p>
+  </section>
 
   <footer>
     © 2025 Ghozt – Automated AI Trading
