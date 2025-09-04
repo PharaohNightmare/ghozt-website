@@ -3,15 +3,88 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ghozt</title>
+  <title>Ghozt – Automated AI Trading</title>
   <style>
-    body { font-family: Arial, sans-serif; text-align: center; margin: 50px; }
-    h1 { color: #4a4a4a; }
-    p { color: #555; }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #0f0f0f, #1a1a40);
+      color: #f0f0f0;
+      text-align: center;
+    }
+    header {
+      padding: 20px;
+      background: rgba(0,0,0,0.6);
+      backdrop-filter: blur(6px);
+      position: sticky;
+      top: 0;
+    }
+    nav a {
+      color: #00ffe0;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover { color: #ff00ff; }
+    .hero {
+      padding: 80px 20px;
+    }
+    h1 {
+      font-size: 3em;
+      margin-bottom: 15px;
+      color: #00ffe0;
+      text-shadow: 0 0 15px #00ffe0aa;
+    }
+    p {
+      font-size: 1.3em;
+      max-width: 700px;
+      margin: auto;
+      line-height: 1.6;
+    }
+    .cta {
+      margin-top: 30px;
+    }
+    .cta a {
+      background: #00ffe0;
+      color: #0f0f0f;
+      padding: 15px 25px;
+      border-radius: 10px;
+      font-size: 1.2em;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .cta a:hover { background: #ff00ff; color: #fff; }
+    footer {
+      margin-top: 50px;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #aaa;
+    }
   </style>
 </head>
 <body>
-  <h1>👻 Welcome to Ghozt</h1>
-  <p>Ghozt is an application that integrates cTrader with Causel, enabling automated trading and task management through ChatGPT.</p>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>👻 Welcome to Ghozt</h1>
+    <p>
+      Ghozt is an application that integrates <b>cTrader</b> with AI Agents 
+      (Cursor, etc.), enabling <b>automated trading</b> and <b>task management</b> 
+      through Artificial Intelligence.
+    </p>
+    <div class="cta">
+      <a href="about.html">Learn More</a>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Ghozt – Automated AI Trading
+  </footer>
 </body>
 </html>
