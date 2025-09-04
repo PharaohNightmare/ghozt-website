@@ -8,7 +8,8 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', Arial, sans-serif;
-      background: linear-gradient(135deg, #0a0a1f, #1b0033);
+      background: radial-gradient(circle at top left, #14002a, #0a0a1f 60%),
+                  radial-gradient(circle at bottom right, #1b0040, transparent 70%);
       color: #f0f0f0;
       overflow-x: hidden;
     }
@@ -45,13 +46,30 @@
       line-height: 1.7;
       color: #ddd;
     }
-    .ghost-bg {
+    /* Floating ghost-like particles */
+    .particles {
       position: fixed;
       top: 0; left: 0;
       width: 100%; height: 100%;
-      background: url('https://i.ibb.co/FVm1mXn/ghost-ai-bg.png') center/cover no-repeat;
-      opacity: 0.07;
+      pointer-events: none;
       z-index: -1;
+    }
+    .particle {
+      position: absolute;
+      width: 10px; height: 10px;
+      border-radius: 50%;
+      background: rgba(0,255,224,0.3);
+      box-shadow: 0 0 15px rgba(0,255,224,0.6);
+      animation: float 12s infinite ease-in-out;
+    }
+    .particle:nth-child(2) { left: 25%; top: 70%; animation-duration: 18s; background: rgba(255,0,255,0.3); }
+    .particle:nth-child(3) { left: 60%; top: 40%; animation-duration: 20s; }
+    .particle:nth-child(4) { left: 80%; top: 20%; animation-duration: 15s; background: rgba(255,0,255,0.3); }
+    .particle:nth-child(5) { left: 10%; top: 30%; animation-duration: 25s; }
+    @keyframes float {
+      0% { transform: translateY(0) scale(1); opacity: 0.4; }
+      50% { transform: translateY(-50px) scale(1.2); opacity: 0.8; }
+      100% { transform: translateY(0) scale(1); opacity: 0.4; }
     }
     .cta {
       margin-top: 40px;
@@ -75,7 +93,15 @@
   </style>
 </head>
 <body>
-  <div class="ghost-bg"></div>
+  <!-- Floating ghost-like effect -->
+  <div class="particles">
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+  </div>
+
   <header>
     <nav>
       <a href="index.html">Home</a>
